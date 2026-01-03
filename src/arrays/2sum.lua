@@ -1,4 +1,4 @@
---- Finds two indices i, j such that nums[i] + nums[j] == target (brute force).
+--- Finds two indices i, j such that nums[i] + nums[j] == target (brute force). 0(n^2) 2 loops, 0(1) space
 local function two_sum_bruteforce(nums, target)
   for i = 1, #nums do
     for j = i + 1, #nums do
@@ -11,7 +11,7 @@ local function two_sum_bruteforce(nums, target)
   return nil, nil
 end
 
--- Better algorithm, uses O(n) time and 0(n^2) space complexity, space complexity is worse
+-- Better algorithm, uses O(n) time and 0(n) space complexity, space complexity is worse
 
 local function two_sum_maping(nums, target)
   local seen = {}
